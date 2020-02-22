@@ -8,10 +8,10 @@
   <title>Saving Models</title>
   <meta name="description" content="        Saving Models        from ngboost import NGBClassifier, NGBRegressorfrom ngboost.distns import k_categorical, Normalfrom ngboost.scores import LogSco...">
 
-  <link rel="canonical" href="https://alejandroschuler.github.io/guide/4-saving.html">
-  <link rel="alternate" type="application/rss+xml" title="NGBoost" href="https://alejandroschuler.github.io/guide/feed.xml">
+  <link rel="canonical" href="https://alejandroschuler.github.io/ngboost/4-saving.html">
+  <link rel="alternate" type="application/rss+xml" title="NGBoost" href="https://alejandroschuler.github.io/ngboost/feed.xml">
 
-  <meta property="og:url"         content="https://alejandroschuler.github.io/guide/4-saving.html" />
+  <meta property="og:url"         content="https://alejandroschuler.github.io/ngboost/4-saving.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Saving Models" />
 <meta property="og:description" content="        Saving Models        from ngboost import NGBClassifier, NGBRegressorfrom ngboost.distns import k_categorical, Normalfrom ngboost.scores import LogSco..." />
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://alejandroschuler.github.io/guide/4-saving.html",
+  "mainEntityOfPage": "https://alejandroschuler.github.io/ngboost/4-saving.html",
   "headline": "Saving Models",
-  "datePublished": "2020-02-22T11:53:46-08:00",
-  "dateModified": "2020-02-22T11:53:46-08:00",
+  "datePublished": "2020-02-22T12:07:26-08:00",
+  "dateModified": "2020-02-22T12:07:26-08:00",
   "description": "        Saving Models        from ngboost import NGBClassifier, NGBRegressorfrom ngboost.distns import k_categorical, Normalfrom ngboost.scores import LogSco...",
   "author": {
     "@type": "Person",
@@ -38,21 +38,21 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://alejandroschuler.github.io/guide",
+      "url": "https://alejandroschuler.github.io/ngboost",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://alejandroschuler.github.io/guide",
+    "url": "https://alejandroschuler.github.io/ngboost",
     "height": 60,
     "width": 60
   }
 }
 
   </script>
-  <link rel="stylesheet" href="/guide/assets/css/styles.css">
+  <link rel="stylesheet" href="/ngboost/assets/css/styles.css">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
@@ -61,7 +61,7 @@
   <meta name="theme-color" content="#233947">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/guide/images/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/ngboost/images/logo/favicon.ico">
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
@@ -96,19 +96,19 @@ MathJax.Hub.Config({
 
 
   <!-- DOM updating function -->
-  <script src="/guide/assets/js/page/dom-update.js"></script>
+  <script src="/ngboost/assets/js/page/dom-update.js"></script>
 
   <!-- Selectors for elements on the page -->
-  <script src="/guide/assets/js/page/documentSelectors.js"></script>
+  <script src="/ngboost/assets/js/page/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = '/guide';
+    const site_basename = '/ngboost';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script src="/guide/assets/js/page/anchors.js" async></script>
+  <script src="/ngboost/assets/js/page/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
@@ -130,7 +130,7 @@ MathJax.Hub.Config({
 
 const thebelabCellButton = id =>
   `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/guide/assets/images/edit-button.svg" alt="Start thebelab interactive mode">
+    <img src="/ngboost/assets/images/edit-button.svg" alt="Start thebelab interactive mode">
   </a>`
 
 
@@ -244,7 +244,7 @@ var detectLanguage = (language) => {
 
   <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.8.1/tocbot.min.js" async></script>
-  <script src="/guide/assets/js/page/tocbot.js"></script>
+  <script src="/ngboost/assets/js/page/tocbot.js"></script>
 
   <!-- Google analytics -->
   
@@ -254,11 +254,11 @@ var detectLanguage = (language) => {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
 
   <!-- Load custom website scripts -->
-  <script src="/guide/assets/js/scripts.js" async></script>
+  <script src="/ngboost/assets/js/scripts.js" async></script>
 
   <!-- Load custom user CSS and JS  -->
-  <script src="/guide/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/guide/assets/custom/custom.css">
+  <script src="/ngboost/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/ngboost/assets/custom/custom.css">
 
   <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
@@ -352,10 +352,10 @@ initFunction(initQuery);
 </script>
 
   <!-- Load JS that depends on site variables -->
-  <script src="/guide/assets/js/page/copy-button.js" async></script>
+  <script src="/ngboost/assets/js/page/copy-button.js" async></script>
 
   <!-- Hide cell code -->
-  <script src="/guide/assets/js/page/hide-cell.js" async></script>
+  <script src="/ngboost/assets/js/page/hide-cell.js" async></script>
 
   <!-- Printing the screen -->
   <!-- Include nbinteract for interactive widgets -->
@@ -375,7 +375,7 @@ printContent = () => {
     printJS({
         printable: 'textbook_content',
         type: 'html',
-        css: "/guide/assets/css/styles.css",
+        css: "/ngboost/assets/css/styles.css",
         style: "#textbook_content {padding-top: 40px};",
         scanStyles: false,
         targetStyles: ["*"],
@@ -435,7 +435,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter" data-url="/intro">
         <a class="c-sidebar__entry"
-          href="/guide/intro.html"
+          href="/ngboost/intro.html"
         >
           
           User Guide
@@ -467,7 +467,7 @@ initFunction(initPrint)
 
             <li class="c-sidebar__section" data-url="/0-install">
               <a class="c-sidebar__entry"
-                href="/guide/0-install.html"
+                href="/ngboost/0-install.html"
               >
                 
                 Installation
@@ -486,7 +486,7 @@ initFunction(initPrint)
 
             <li class="c-sidebar__section" data-url="/1-useage">
               <a class="c-sidebar__entry"
-                href="/guide/1-useage.html"
+                href="/ngboost/1-useage.html"
               >
                 
                 Usage
@@ -505,7 +505,7 @@ initFunction(initPrint)
 
             <li class="c-sidebar__section" data-url="/2-tuning">
               <a class="c-sidebar__entry"
-                href="/guide/2-tuning.html"
+                href="/ngboost/2-tuning.html"
               >
                 
                 Tuning
@@ -524,7 +524,7 @@ initFunction(initPrint)
 
             <li class="c-sidebar__section" data-url="/3-interpretation">
               <a class="c-sidebar__entry"
-                href="/guide/3-interpretation.html"
+                href="/ngboost/3-interpretation.html"
               >
                 
                 Model Interpretation
@@ -543,7 +543,7 @@ initFunction(initPrint)
 
             <li class="c-sidebar__section" data-url="/4-saving">
               <a class="c-sidebar__entry"
-                href="/guide/4-saving.html"
+                href="/ngboost/4-saving.html"
               >
                 
                 Saving Models
@@ -562,7 +562,7 @@ initFunction(initPrint)
 
             <li class="c-sidebar__section" data-url="/5-dev">
               <a class="c-sidebar__entry"
-                href="/guide/5-dev.html"
+                href="/ngboost/5-dev.html"
               >
                 
                 Developing NGBoost
@@ -691,9 +691,9 @@ initFunction(initPrint)
     </button>
     <div class="buttons">
 <div class="download-buttons-dropdown">
-    <button id="dropdown-button-trigger" class="interact-button"><img src="/guide/assets/images/download-solid.svg" alt="Download" /></button>
+    <button id="dropdown-button-trigger" class="interact-button"><img src="/ngboost/assets/images/download-solid.svg" alt="Download" /></button>
     <div class="download-buttons">
-        <a href="/guide/content/4-saving.ipynb" download>
+        <a href="/ngboost/content/4-saving.ipynb" download>
         <button id="interact-button-download" class="interact-button">.ipynb</button>
         </a>
         
@@ -714,12 +714,12 @@ initFunction(initPrint)
   </div>
   <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
   <aside class="sidebar__right">
-    <header><h4 class="nav__title"><img src="/guide/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
+    <header><h4 class="nav__title"><img src="/ngboost/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
     <nav class="onthispage">
     </nav>
   </aside>
-  <a href="/guide/search.html" class="topbar-right-button" id="search-button">
-    <img src="/guide/assets/images/search-solid.svg" alt="Search" />
+  <a href="/ngboost/search.html" class="topbar-right-button" id="search-button">
+    <img src="/ngboost/assets/images/search-solid.svg" alt="Search" />
   </a>
 </div>
 
@@ -893,7 +893,7 @@ initFunction(initPrint)
     
     
 
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/guide/3-interpretation.html">
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/ngboost/3-interpretation.html">
       〈 <span class="u-margin-right-tiny"></span> Model Interpretation
     </a>
   
@@ -902,7 +902,7 @@ initFunction(initPrint)
     
 
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/guide/5-dev.html">
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/ngboost/5-dev.html">
       Developing NGBoost <span class="u-margin-right-tiny"></span> 〉
     </a>
   
